@@ -1,0 +1,55 @@
+What is GitHub?
+
+GitHub is a code hosting platform for collaboration and version control.
+GitHub lets you (and others) work together on projects.
+
+what is Repository
+A GitHub repository can be used to store a development project.
+or a place where we keep our project in github
+
+what is README
+README file contain information about the project.
+
+to use github we must install git cli in our computer 
+download and install in your computer
+https://git-scm.com/downloads 
+
+
+how to create a new project in github?
+
+login into you github account
+www.github.com
+
+step 1 : go to your github https://github.com/mdfiroz811315
+step 2 : click repositories
+step 3 : click new
+step 4 : add Repository name , Description and click Add a README file
+step 5 : Create Repository your new repository will be created
+
+
+How to Clone Git Project in your Machine
+
+step 1 : go to git repository you want to clone
+step 2 : click on code
+Step 3 : copy clone Https URL example https://github.com/mdfiroz811315/hello-world.git
+step 4 : open you machine command prompt
+step 5 : go to the location where you want to download this code
+step 6 : git clone "Github Repository URL" for example git clone https://github.com/mdfiroz811315/hello-world.git
+
+how to open this code in VS?
+
+step 1 :cd location (go inside of git folder which got created)
+step 2 : code .
+
+how to push code to github?
+
+step 1: if you do any changes you will get notify in source control icon click it.
+step 2: hover on Changes and click + (you will see stage changes appear)
+step 3 : add commit message on top 
+step 4 : click on tick (right symbol)
+
+
+
+
+
+ 
