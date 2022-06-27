@@ -96,7 +96,7 @@ A branch is essentially is a unique set of code changes with a unique name.
 
  How to Merge code from Other to Main Branch i.e Create Pull Request
   step 1 : push code from your branch
-  Step 2 : 
+ bbbbbbbbbbb 2 : 
 
 
 
