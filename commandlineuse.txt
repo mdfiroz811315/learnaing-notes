@@ -30,7 +30,7 @@ cls (Enter)
 
 code . (Enter)
 
-### how to make folder through Commandline###
+### how to create folder through Commandline###
 
 go to location
 mkdir foldernameyouwanttocreate (Enter)
