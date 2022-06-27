@@ -84,6 +84,16 @@ A branch is essentially is a unique set of code changes with a unique name.
  Step 3 : Add Branch Name ()
  step 4 : Create branch(new branch will get created from main branch)
  Through Visual studio Terminal
- git checkout -b "new branch" (Enter)
+ step 1: git checkout -b "new branch" (Enter)
+ step 2: save code and commit
+ step 3: click on Publish Branch 
+
+ how to check your branch name
+ git branch
+
+ To Change your branch
+ git checkout "branch name"
+
+
 
 
