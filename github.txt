@@ -47,6 +47,8 @@ step 1: if you do any changes you will get notify in source control icon click i
 step 2: hover on Changes and click + (you will see stage changes appear)
 step 3 : add commit message on top 
 step 4 : click on tick (right symbol)
+step 5 : click on Sync Changes
+ 
 
 
 
