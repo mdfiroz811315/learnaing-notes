@@ -1,0 +1,40 @@
+#### to open command line ###
+goto start
+search command line
+
+### to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut###
+
+for example C:\Windows\System32\cmd.exe
+
+go to search bar
+remove location  (remove C:\Windows\System32\cmd.exe)
+type cmd  (in place of C:\Windows\System32\cmd.exe type cmd)
+
+### to open folder location in Commandline ###
+ for example what to go to C:\Users\MIRZA TAHSIN\Coding\learnaing-notes location
+
+ stpe 1 open command prompt
+cd C:\Users\MIRZA TAHSIN\Coding\learnaing-notes (Enter)
+
+
+#### To go to next repository(aage wala folder k lia)###
+cd "location"
+
+### to go to previous location(piche wala folder k lia) ###
+cd .. (Enter)
+
+### to clear your Commandline###
+cls (Enter)
+
+### to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ###
+
+code . (Enter)
+
+### how to make folder through Commandline###
+
+go to location
+mkdir foldernameyouwanttocreate (enter)
+
+### how to clone git repo###
+
+git clone "Repo location"(Enter)
