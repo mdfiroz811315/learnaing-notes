@@ -1,0 +1,26 @@
+What Is React
+
+React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.
+It is maintained by Meta(Facebook) and a community of individual developers and companies.
+
+//pre-request Nodejs Must be Install in your machine
+
+Step 1:
+
+npx create-react-app foldername
+
+Step 2:
+
+cd foldername
+
+Step 3:
+
+in Terminal Type
+
+npm start
+
+Step 5:
+
+Open any Browser chrome/Mozilla
+
+http://127.0.0.1:3000/ or http://localhost:3000/
