@@ -1,0 +1,27 @@
+we will be using mongoose to connect and use MongoDB
+
+What is mongoose
+
+Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.
+It manages relationships between data, provides schema validation,
+ and is used to translate between objects in code and the representation
+of those objects in MongoDB.
+
+
+Requirement your express project must be there if not first create express server
+
+Step 1 : In terminal type npm install mongoose
+
+step 2 : in your server.js add following line
+        const mongoose = require("mongoose"); // on top side of page
+
+        ////////////in middle ///////////////
+        const uri = "MONGODB CONNECTION URL";
+
+        mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true})
+        .then(()=>{
+            console.log("success"); // IF CONNECTION MADE SUCCESSFULLY
+        }).catch((err) =>{
+            console.log(err,"error"); // IF CONNECTION HAS ISSUE
+        }) 
+

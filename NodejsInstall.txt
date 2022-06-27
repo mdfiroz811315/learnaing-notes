@@ -1,0 +1,38 @@
+What is Nodejs
+
+Node.js is an open source server environment;
+ which helpus to write Javascript code in server
+
+ What is NPM 
+
+npm is the world's largest Software Registry.
+The registry contains over 800,000 code packages.
+Open-source developers use npm to share software.
+Many organizations also use npm to manage private development.
+
+
+
+To Install Nodejs
+Step 1 : goto https://nodejs.org/en/download/
+Step 2 : Download Window Installer and run and Install
+(once we install we can use command start with node,npm)
+
+To check node is install or not
+open Commandline type 
+node(Enter)
+
+if not install
+'node' is not recognized as an internal or external command,
+operable program or batch file.
+
+if it is install
+
+Welcome to Node.js v16.15.1.
+Type ".help" for more information.
+>
+
+To Check node version
+node -v
+
+To Check NPM version
+npm -v

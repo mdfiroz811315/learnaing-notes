@@ -1,0 +1,54 @@
+What is MongoDB?
+
+MongoDB is an open-source, cross-platform, and distributed document-based database designed for ease of application development and scaling.
+ It is a NoSQL database developed by MongoDB Inc.
+
+
+ The following table lists the relation between MongoDB and RDBMS terminologies.
+
+NoSQL Database(MongoDB ,Cloudant)	RDBMS (SQL Server, Oracle,Mysql etc.)
+Database	                        Database
+Collection	                        Table
+Document	                        Row (Record)
+Field	                            Column
+
+Advantages of MongoDB
+
+MongoDB stores data as JSON based document that does not enforce the schema. It allows us to store hierarchical data in a document. This makes it easy to store and retrieve data in an efficient manner.
+It is easy to scale up or down as per the requirement since it is a document based database. MongoDB also allows us to split data across multiple servers.
+MongoDB provides rich features like indexing, aggregation, file store, etc.
+MongoDB performs fast with huge data.
+MongoDB provides drivers to store and fetch data from different applications developed in different technologies such as C#, Java, Python, Node.js, etc.
+MongoDB provides tools to manage MongoDB databases.
+
+Step to Create Mongodb Database in Mongo Atlas(Cloud base mongodb service)
+Step 1: Signup your self in https://www.mongodb.com/cloud/atlas/register
+Step 2: Login
+Step 3: Click on Create
+step 4: choose shared -> aws -> mumbai and save
+
+How to add IP to access the cluster
+
+step 1 :left panel under security go to network access
+Step 2: Add Ip Address
+Step 3 : add 0.0.0.0 in Access List Entry:
+
+How to add user to access the database
+
+step 1 :left panel under security go to Database access
+Step 2 : Click add new database user
+step 3 : select password and provide details (remember pssword it will be neede later)
+step 4: click on add user
+
+How to check your data collection 
+step 1 : Left panel under Deployment go to database
+step 2 : click on browse collection
+
+how to get collection string which are needed to connect database from Nodejs,java etc
+step 1 : Left panel under Deployment go to database
+Step 2 : click Connect
+Step 3 : Click Connect Your Application
+
+
+
+
