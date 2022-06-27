@@ -112,5 +112,5 @@ A branch is essentially is a unique set of code changes with a unique name.
   step 3 : Save Change and Push Code 
   
 To Delete git Branch
- git branch –d branchfromvs
+ git branch –d "branch name"
 
