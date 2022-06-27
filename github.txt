@@ -86,3 +86,4 @@ A branch is essentially is a unique set of code changes with a unique name.
  Through Visual studio Terminal
  git checkout -b "new branch" (Enter)
 
+
