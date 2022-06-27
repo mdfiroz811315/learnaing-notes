@@ -96,7 +96,23 @@ A branch is essentially is a unique set of code changes with a unique name.
 
  How to Merge code from Other to Main Branch i.e Create Pull Request
   step 1 : push code from your branch
-  Step 2 : 
+  Step 2 : Go To Github repo
+  Step 3 : click on pull Request
+  step 4 : click on new pull Request
+  step 5 : in "Comparing changes" select base(jaha code jaega example main)  to compare(jaha se merge karenge example new branch)
+  Step 6 : Click Create Pull Request (it will check your conflict etc for few seconds)
+  Step 7 : Click Merge Pull Request
+  Step 8 : Confirm Merge
+
+  How to Resolve Merge Conflict using VS code ?
+  if in same file multiple people do change we will have merge conflict when we push our code
+  
+
+
+
+
+
+
 
 
 
