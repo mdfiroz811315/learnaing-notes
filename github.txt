@@ -106,6 +106,10 @@ A branch is essentially is a unique set of code changes with a unique name.
 
   How to Resolve Merge Conflict using VS code ?
   if in same file multiple people do change we will have merge conflict when we push our code
+
+  Step 1 : Select what you want to do (accept present/ accept incomming / merge both)
+  Step 2 : click on merge change plus sign
+  step 3 : Save Change and Push Code 
   
 
 
