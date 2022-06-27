@@ -38,7 +38,7 @@ step 6 : git clone "Github Repository URL" for example git clone https://github.
 
 how to open this code in VS?
 
-step 1 :cd location (go inside of git folder which got created)
+step 1 :cd location (go inside of git fold-er which got created)
 step 2 : code .
 
 how to push code to github?
@@ -48,10 +48,41 @@ step 2: hover on Changes and click + (you will see stage changes appear)
 step 3 : add commit message on top 
 step 4 : click on tick (right symbol)
 step 5 : click on Sync Changes
- 
 
 
+**Git Using Commandline
+
+**to go code history using commit
+
+git reset --hard 085515d539f2c59d3b564fd1a0eab930900f2a33(commit number)
+
+git pull
+
+// to push code from cmd in git
+
+git status
+
+git add .
+
+git commit -m "my changes through cmd"
+
+git push
 
 
+How Team collaboration are done in git ?
+its done by using multiple brances.
+A branch is essentially is a unique set of code changes with a unique name.
+ Each repository can have one or more branches. 
+ The main branch — the one where all changes eventually get merged back into, 
+ and is called master. 
 
- 
+ How to Create Branch ?
+
+ Through Github 
+ Step 1 : goto git repository
+ Step 2 : click on main (branch section)
+ Step 3 : Add Branch Name ()
+ step 4 : Create branch(new branch will get created from main branch)
+ Through Visual studio Terminal
+ git checkout -b "new branch" (Enter)
+
