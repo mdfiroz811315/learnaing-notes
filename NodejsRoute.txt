@@ -1,0 +1,20 @@
+What is Routing?
+Routing defines the way in which the client requests
+are handled by the application endpoints.
+
+Step 1 : Create new folder name as route // if create no need
+Step 2 : Create one file example user.js
+step 3 : use following code in user.js
+
+const router = require("express").Router(); // first line
+
+router.route("/").get((req,res)=>{
+    res.send('I am in user')
+});
+/////////////////////
+module.exports = router  // last line
+
+Step 4 : Go To Server.js and add two lines(Notes above app.listen)
+
+const userRoute = require("./route/users");
+app.use('/users',userRoute);
