@@ -7,7 +7,9 @@ It is maintained by Meta(Facebook) and a community of individual developers and 
 
 Step 1:
 
-npx create-react-app foldername
+npx create-react-app foldername for Javascript mode
+
+npx create-react-app my-app --template typescript
 
 Step 2:
 
