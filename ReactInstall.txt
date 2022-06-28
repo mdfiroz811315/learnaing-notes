@@ -11,6 +11,12 @@ npx create-react-app foldername for Javascript mode
 
 npx create-react-app my-app --template typescript
 
+To add TypeScript to an existing Create React App project, first install it:
+
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+Next, rename any file to be a TypeScript file (e.g. src/index.js to src/index.tsx) and restart your development server!
+
 Step 2:
 
 cd foldername
