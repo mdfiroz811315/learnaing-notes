@@ -1,8 +1,8 @@
-#### to open command line ###
+1. #### to open command line ###
 goto start
 search command line
 
-### to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut###
+2.### to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut###
 
 for example C:\Windows\System32\cmd.exe
 
@@ -10,31 +10,54 @@ go to search bar
 remove location  (remove C:\Windows\System32\cmd.exe)
 type cmd  (in place of C:\Windows\System32\cmd.exe type cmd)
 
-### to open folder location in Commandline ###
+other way
+Open the Command Prompt From Any Location
+
+Hold down Shift while you right-click anywhere in the folder.
+
+
+3.### to open folder location in Commandline ###
  for example what to go to C:\Users\MIRZA TAHSIN\Coding\learnaing-notes location
 
  stpe 1 open command prompt
 cd C:\Users\MIRZA TAHSIN\Coding\learnaing-notes (Enter)
 
 
-#### To go to next repository(aage wala folder k lia)###
+4.#### To go to next repository(aage wala folder k lia)###
 cd "location"
 
-### to go to previous location(piche wala folder k lia) ###
+5.### to go to previous location(piche wala folder k lia) ###
 cd .. (Enter)
 
-### to clear your Commandline###
+6.### to clear your Commandline###
 cls (Enter)
 
-### to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ###
+7.### to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ###
 
 code . (Enter)
 
-### how to create folder through Commandline###
+8.### how to create folder through Commandline###
 
 go to location
 mkdir foldernameyouwanttocreate (Enter)
 
-### how to clone git repo###
+9.### how to clone git repo###
 
 git clone "Repo location" (Enter)
+
+10.Show Your Wifi Password
+ “netsh wlan show profile SSID key=clear” – Show Your Wifi Password
+
+ 11. Always Run Command Prompt as Administrator
+
+ To do this, go under “Start” and type in “cmd”.
+ From there right-click on the application icon (left-hand side) > Properties > Shortcut tab > Advanced button.
+ Under “Run As”, choose either administrator account or specific user name depending on who needs access and hit apply!.
+
+ 12. “systeminfo” – Get Information About Your PC
+
+ 13. “ipconfig” – Fix Internet Problems
+
+ 14. 22. “CTRL + C” – Abort a Command
+
+ 15. npm/ng/npx install abcd to install any library

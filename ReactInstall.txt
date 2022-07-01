@@ -79,3 +79,43 @@ root.render(
 
 
 
+################ How to Include Bootstraps and Fontawesome In Your Application ################
+
+Step 1 : Npm install Bootstraps font-awesome
+
+Step 2 : go to index.tsx and add below line
+
+/**font awesome */
+import '../node_modules/font-awesome/css/font-awesome.css';// https://cdnjs.com/libraries/font-awesome choose your version css file
+
+/**Bootstraps */
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+
+
+in app.tsx
+
+import React from 'react';
+import './App.css';
+
+function App() {
+let cssStyle = {
+  'color' :'blue'
+}
+  return (
+    <React.Fragment>
+     <h1 style={{color : 'red'}}>Use Inline CSS</h1>
+     <h2 style={cssStyle}>Internal CSS Style</h2>
+     <h2 className='colors'>External CSS Style it will read stryle from app.css file</h2>
+     <h2 className='text-warning'>Style from Bootstraps</h2>
+     <i className='fa fa-home'>Home</i>
+    </React.Fragment>
+  );
+}
+
+export default App;
+
+################################################################################################
+
+
+
