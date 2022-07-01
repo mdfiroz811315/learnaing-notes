@@ -78,7 +78,7 @@ root.render(
 
 
 
-################ How to Include Bootstraps and Fontawesome In Your Application ################
+################ How to Include Bootstrap and Fontawesome In Your Application ################
 
 Step 1 : Npm install Bootstraps font-awesome
 
