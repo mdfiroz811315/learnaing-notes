@@ -1,8 +1,11 @@
-1. #### to open command line ###
-goto start
-search command line
 
-2.### to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut###
+IMPORTANT Commandline command which will be helpful for everyone specially software developer
+
+1. **** to open command line ***
+goto start
+search command line * cmd
+
+2.*** to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut***
 
 for example C:\Windows\System32\cmd.exe
 
@@ -16,32 +19,32 @@ Open the Command Prompt From Any Location
 Hold down Shift while you right-click anywhere in the folder.
 
 
-3.### to open folder location in Commandline ###
+3.*** to open folder location in Commandline ***
  for example what to go to C:\Users\MIRZA TAHSIN\Coding\learnaing-notes location
 
  stpe 1 open command prompt
 cd C:\Users\MIRZA TAHSIN\Coding\learnaing-notes (Enter)
 
 
-4.#### To go to next repository(aage wala folder k lia)###
+4.**** To go to next repository(aage wala folder k lia)***
 cd "location"
 
-5.### to go to previous location(piche wala folder k lia) ###
+5.*** to go to previous location(piche wala folder k lia) ***
 cd .. (Enter)
 
-6.### to clear your Commandline###
+6.*** to clear your Commandline***
 cls (Enter)
 
-7.### to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ###
+7.*** to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ***
 
 code . (Enter)
 
-8.### how to create folder through Commandline###
+8.*** how to create folder through Commandline***
 
 go to location
 mkdir foldernameyouwanttocreate (Enter)
 
-9.### how to clone git repo###
+9.*** how to clone git repo***
 
 git clone "Repo location" (Enter)
 
@@ -60,4 +63,4 @@ git clone "Repo location" (Enter)
 
  14. 22. “CTRL + C” – Abort a Command
 
- 15. npm/ng/npx install abcd to install any library
+ 15. npm *ng *npx install abcd to install any library
