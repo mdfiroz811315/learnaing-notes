@@ -64,3 +64,18 @@ git clone "Repo location" (Enter)
  14. 22. “CTRL + C” – Abort a Command
 
  15. npm *ng *npx install abcd to install any library
+
+ 16. to create any file using Commandline file name file.txt
+
+ echo.>file.txt //in Windows
+ touch file.txt // in Shell
+
+17. The general form of the command is cp source destination, for example:
+
+   cp myfile.txt myfilecopy.txt
+
+18 to delete file using cmd
+    del filename
+
+
+
