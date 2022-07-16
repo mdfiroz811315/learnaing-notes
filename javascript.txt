@@ -1,0 +1,61 @@
+1990 // 2006 typescript
+<script>
+console.log(x); // undefined 
+//console.log(a) // error
+//console.log(m); // error
+
+//var x = 5;
+var x; // variable declaration
+x =5; // value assignment
+var y = 6;
+var z = x + y;
+console.log("z = ",z);
+
+let a =8;
+let b = 6;
+let c = a+b;
+console.log("c = ",c);
+
+const m =10;
+const n = [6,6,8];
+const o = m+n;
+console.log("o = ",o);
+
+function(){
+    console.log(x)// since x is declare var so it has global scope
+}
+
+///////////////
+
+    var x = "John Doe";
+    
+    var x = 0;
+    console.log("x = "+x); // it will run
+ ////////////////////////   
+/////////////////////
+
+  let x = "John Doe";
+    
+    let x = 0;
+    console.log("x = "+x); // give error
+    
+    //////////////////
+
+///////////////////////////
+
+let x = 10
+    
+    x++;
+    x++;
+    x++;
+   console.log("x = "+x);
+    let y = 10
+    
+     y--;
+    console.log("y = "+y);
+
+ /////////////////////////////   
+
+
+
+</script>
