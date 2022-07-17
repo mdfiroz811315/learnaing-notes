@@ -1,0 +1,51 @@
+String Methods and Properties
+
+JavaScript String Length
+The length property returns the length of a string:
+Example
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length; // 26
+
+There are 3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+Note
+JavaScript counts positions from zero.
+First position is 0. A=0
+Second position is 1. B=1
+If a parameter is negative, the position is counted from the end of the string.
+
+The replace() method replaces a specified value with another value in a string:
+
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools"); // Please visit W3Schools
+
+Converting to Upper and Lower Case
+A string is converted to upper case/Capital letter with toUpperCase():
+let text = "my name"
+text.toUpperCase() // MY NAME
+A string is converted to lower case/Small letter with toLowerCase():
+let text = "my name"
+text.toLowerCase() // my name
+JavaScript String trim()
+The trim() method removes whitespace from both sides of a string:
+let text = "   my name   "
+text.trim() // my name
+
+JavaScript String charAt()
+The charAt() method returns the character at a specified index (position) in a string:
+let text = "HELLO WORLD";
+let char = text.charAt(1); // E
+
+JavaScript String split()
+A string can be converted to an array with the split() method:
+
+JavaScript Search Methods
+String indexOf() // 2
+String lastIndexOf() // 9
+String startsWith()
+String endsWith()
