@@ -1,0 +1,17 @@
+<html>
+    <script>
+let forech = [1,2,3,4,5,6];
+forech.forEach(function(val,index,arr){
+    forech[index] = val*2;
+})
+
+let mapforeach = [1,2,3,4,5,6];
+let newVal = mapforeach.map(function(val,index,arr){
+    return val*2
+})
+
+console.log("foreach original array",forech);
+console.log("map original array",mapforeach);
+console.log("map new array",newVal);
+</script>
+</html>

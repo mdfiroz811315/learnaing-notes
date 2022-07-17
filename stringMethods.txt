@@ -43,10 +43,17 @@ let char = text.charAt(1); // E
 
 JavaScript String split()
 A string can be converted to an array with the split() method:
+let name = "MD Firoz";
+name.split("");  //['M','D',' ','F','i','r','o','z'];
+let name = "MD Firoz Baig";
+name.split(" "); //['MD','Firoz','Baig']
+
+
 
 JavaScript Search Methods
-String indexOf('L') // 2
-String lastIndexOf('L') // 9
+let str= "HELLO WORLD";
+String str.indexOf('L') // 2
+String str.lastIndexOf('L') // 9
 
 Both indexOf(), and lastIndexOf() return -1 if the text is not found:
 
