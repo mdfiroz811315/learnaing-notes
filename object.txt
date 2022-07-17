@@ -1,0 +1,34 @@
+format {"KEY" : value};
+// json object
+let x = {
+            "name" : "Firoz",
+            "age" : 21,
+            "class" : { "z" : "abbb","num" :10,"c" : "ccc"}
+            "education" :[
+                {
+                    "class" : 10
+                },
+                {
+                    "class" : 12
+                }
+            ]
+        };
+
+        x.name // Firoz
+        x.age // 21
+        x.class // {"z" : "abbb"}
+
+        x.name = "Baig"
+
+        x = {
+            "name" : "Baig",
+            "age" : 21,
+            "education" :[
+                {
+                    "class" : 10
+                },
+                {
+                    "class" : 12
+                }
+            ]
+        };

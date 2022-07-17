@@ -45,7 +45,36 @@ JavaScript String split()
 A string can be converted to an array with the split() method:
 
 JavaScript Search Methods
-String indexOf() // 2
-String lastIndexOf() // 9
-String startsWith()
-String endsWith()
+String indexOf('L') // 2
+String lastIndexOf('L') // 9
+
+Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.lastIndexOf("John"); // -1
+
+The search() method searches a string for a specified value and returns the position of the match:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.search("locate"); // 7
+str.search("locate",15); //21
+
+JavaScript String startsWith()
+The startsWith() method returns true if a string begins with a specified value, otherwise false:
+
+Example
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("Hello"); // true
+text.startsWith("World"); // false
+
+JavaScript String endsWith()
+The endsWith() method returns true if a string ends with a specified value, otherwise false:
+
+Example
+Check if a string ends with "Doe":
+
+let text = "John Doe";
+text.endsWith("Doe"); // true

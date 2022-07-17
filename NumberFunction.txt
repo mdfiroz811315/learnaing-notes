@@ -1,0 +1,38 @@
+JavaScript Number Methods
+
+isNaN()
+
+it will return true if we pass String false is we pass Number
+
+isNaN("abc") // true
+isNaN(7)     // false
+
+The toString() Method
+The toString() method returns a number as a string.
+
+let x = 10;
+x.toString()// x = "10"
+
+The toFixed() Method
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+Example
+let x = 9.656;
+x.toFixed(0); // 10
+x.toFixed(2); // 9.66
+x.toFixed(4); // 9.6560
+
+The parseInt() Method
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+let x = "10";
+x.parseInt()// x = 10
+
+let x = "10.33";
+x.parseInt()// x = 10
+
+The parseFloat() Method
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+parseFloat("10");  //10
+parseFloat("10.33"); // 10.33
