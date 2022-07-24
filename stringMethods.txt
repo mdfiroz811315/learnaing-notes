@@ -1,0 +1,205 @@
+String Methods and Properties
+
+JavaScript String Length
+The length property returns the length of a string:
+Example
+let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = txt.length; // 26
+
+There are 3 methods for extracting a part of a string:
+
+slice(start, end)
+substring(start, end)
+substr(start, length)
+
+Note
+JavaScript counts positions from zero.
+First position is 0. A=0
+Second position is 1. B=1
+If a parameter is negative, the position is counted from the end of the string.
+
+The replace() method replaces a specified value with another value in a string:
+
+Example
+let text = "Please visit Microsoft!";
+let newText = text.replace("Microsoft", "W3Schools"); // Please visit W3Schools
+
+Converting to Upper and Lower Case
+A string is converted to upper case/Capital letter with toUpperCase():
+let text = "my name"
+text.toUpperCase() // MY NAME
+A string is converted to lower case/Small letter with toLowerCase():
+let text = "my name"
+text.toLowerCase() // my name
+JavaScript String trim()
+The trim() method removes whitespace from both sides of a string:
+let text = "   my name   "
+text.trim() // my name
+
+JavaScript String charAt()
+The charAt() method returns the character at a specified index (position) in a string:
+let text = "HELLO WORLD";
+let char = text.charAt(1); // E
+
+JavaScript String split()
+A string can be converted to an array with the split() method:
+let name = "MD Firoz";
+name.split("");  //['M','D',' ','F','i','r','o','z'];
+let name = "MD Firoz Baig";
+name.split(" "); //['MD','Firoz','Baig']
+
+
+
+JavaScript Search Methods
+let str= "HELLO WORLD";
+String str.indexOf('L') // 2
+String str.lastIndexOf('L') // 9
+
+Both indexOf(), and lastIndexOf() return -1 if the text is not found:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.lastIndexOf("John"); // -1
+
+The search() method searches a string for a specified value and returns the position of the match:
+
+Example
+let str = "Please locate where 'locate' occurs!";
+str.search("locate"); // 7
+str.search("locate",15); //21
+
+JavaScript String startsWith()
+The startsWith() method returns true if a string begins with a specified value, otherwise false:
+
+Example
+let text = "Hello world, welcome to the universe.";
+
+text.startsWith("Hello"); // true
+text.startsWith("World"); // false
+
+JavaScript String endsWith()
+The endsWith() method returns true if a string ends with a specified value, otherwise false:
+
+Example
+Check if a string ends with "Doe":
+
+let text = "John Doe";
+text.endsWith("Doe"); // true
+
+const s_prim = 'foo'
+const s_obj = new String(s_prim)
+
+console.log(typeof s_prim) // Logs "string"
+console.log(typeof s_obj)  // Logs "object"
+
+const s1 = '2 + 2';              // creates a string primitive
+const s2 = new String('2 + 2');  // creates a String object
+console.log(eval(s1));           // returns the number 4
+console.log(eval(s2));           // returns the string "2 + 2"
+
+A String object can always be converted to its primitive counterpart with the valueOf() method.
+
+console.log(eval(s2.valueOf()))  // returns the number 4
+
+String.prototype.at(index) Experimental
+Returns the character (exactly one UTF-16 code unit) at the specified index. Accepts negative integers, which count back from the last string character.
+
+String.prototype.charAt(index)
+Returns the character (exactly one UTF-16 code unit) at the specified index.
+
+String.prototype.charCodeAt(index)
+Returns a number that is the UTF-16 code unit value at the given index.
+
+String.prototype.codePointAt(pos)
+Returns a nonnegative integer Number that is the code point value of the UTF-16 encoded code point starting at the specified pos.
+
+String.prototype.concat(str [, ...strN ])
+Combines the text of two (or more) strings and returns a new string.
+
+String.prototype.includes(searchString [, position])
+Determines whether the calling string contains searchString.
+
+String.prototype.endsWith(searchString [, length])
+Determines whether a string ends with the characters of the string searchString.
+
+String.prototype.indexOf(searchValue [, fromIndex])
+Returns the index within the calling String object of the first occurrence of searchValue, or -1 if not found.
+
+String.prototype.lastIndexOf(searchValue [, fromIndex])
+Returns the index within the calling String object of the last occurrence of searchValue, or -1 if not found.
+
+String.prototype.localeCompare(compareString [, locales [, options]])
+Returns a number indicating whether the reference string compareString comes before, after, or is equivalent to the given string in sort order.
+
+String.prototype.match(regexp)
+Used to match regular expression regexp against a string.
+
+String.prototype.matchAll(regexp)
+Returns an iterator of all regexp's matches.
+
+String.prototype.normalize([form])
+Returns the Unicode Normalization Form of the calling string value.
+
+String.prototype.padEnd(targetLength [, padString])
+Pads the current string from the end with a given string and returns a new string of the length targetLength.
+
+String.prototype.padStart(targetLength [, padString])
+Pads the current string from the start with a given string and returns a new string of the length targetLength.
+
+String.prototype.repeat(count)
+Returns a string consisting of the elements of the object repeated count times.
+
+String.prototype.replace(searchFor, replaceWith)
+Used to replace occurrences of searchFor using replaceWith. searchFor may be a string or Regular Expression, and replaceWith may be a string or function.
+
+String.prototype.replaceAll(searchFor, replaceWith)
+Used to replace all occurrences of searchFor using replaceWith. searchFor may be a string or Regular Expression, and replaceWith may be a string or function.
+
+String.prototype.search(regexp)
+Search for a match between a regular expression regexp and the calling string.
+
+String.prototype.slice(beginIndex[, endIndex])
+Extracts a section of a string and returns a new string.
+
+String.prototype.split([sep [, limit] ])
+Returns an array of strings populated by splitting the calling string at occurrences of the substring sep.
+
+String.prototype.startsWith(searchString [, length])
+Determines whether the calling string begins with the characters of string searchString.
+
+String.prototype.substring(indexStart [, indexEnd])
+Returns a new string containing characters of the calling string from (or between) the specified index (or indices).
+
+String.prototype.toLocaleLowerCase( [locale, ...locales])
+The characters within a string are converted to lowercase while respecting the current locale.
+
+For most languages, this will return the same as toLowerCase().
+
+String.prototype.toLocaleUpperCase( [locale, ...locales])
+The characters within a string are converted to uppercase while respecting the current locale.
+
+For most languages, this will return the same as toUpperCase().
+
+String.prototype.toLowerCase()
+Returns the calling string value converted to lowercase.
+
+String.prototype.toString()
+Returns a string representing the specified object. Overrides the Object.prototype.toString() method.
+
+String.prototype.toUpperCase()
+Returns the calling string value converted to uppercase.
+
+String.prototype.trim()
+Trims whitespace from the beginning and end of the string. Part of the ECMAScript 5 standard.
+
+String.prototype.trimStart()
+Trims whitespace from the beginning of the string.
+
+String.prototype.trimEnd()
+Trims whitespace from the end of the string.
+
+String.prototype.valueOf()
+Returns the primitive value of the specified object. Overrides the Object.prototype.valueOf() method.
+
+String.prototype.@@iterator()
+Returns a new iterator object that iterates over the code points of a String value, returning each code point as a String value

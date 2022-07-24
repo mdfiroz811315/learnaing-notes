@@ -1,11 +1,8 @@
-
-IMPORTANT Commandline command which will be helpful for everyone specially software developer
-
-1. **** to open command line ***
+#### to open command line ###
 goto start
-search command line * cmd
+search command line
 
-2.*** to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut***
+### to open current folder location in cmd. jis jagah hai waha ka location commanline mai open karne ka shortcut###
 
 for example C:\Windows\System32\cmd.exe
 
@@ -13,69 +10,31 @@ go to search bar
 remove location  (remove C:\Windows\System32\cmd.exe)
 type cmd  (in place of C:\Windows\System32\cmd.exe type cmd)
 
-other way
-Open the Command Prompt From Any Location
-
-Hold down Shift while you right-click anywhere in the folder.
-
-
-3.*** to open folder location in Commandline ***
+### to open folder location in Commandline ###
  for example what to go to C:\Users\MIRZA TAHSIN\Coding\learnaing-notes location
 
  stpe 1 open command prompt
 cd C:\Users\MIRZA TAHSIN\Coding\learnaing-notes (Enter)
 
 
-4.**** To go to next repository(aage wala folder k lia)***
+#### To go to next repository(aage wala folder k lia)###
 cd "location"
 
-5.*** to go to previous location(piche wala folder k lia) ***
+### to go to previous location(piche wala folder k lia) ###
 cd .. (Enter)
 
-6.*** to clear your Commandline***
+### to clear your Commandline###
 cls (Enter)
 
-7.*** to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ***
+### to open visual code of current folder. jis folder mai hain usko vs mai kholna from Commandline ###
 
 code . (Enter)
 
-8.*** how to create folder through Commandline***
+### how to create folder through Commandline###
 
 go to location
 mkdir foldernameyouwanttocreate (Enter)
 
-9.*** how to clone git repo***
+### how to clone git repo###
 
 git clone "Repo location" (Enter)
-
-10.Show Your Wifi Password
- “netsh wlan show profile SSID key=clear” – Show Your Wifi Password
-
- 11. Always Run Command Prompt as Administrator
-
- To do this, go under “Start” and type in “cmd”.
- From there right-click on the application icon (left-hand side) > Properties > Shortcut tab > Advanced button.
- Under “Run As”, choose either administrator account or specific user name depending on who needs access and hit apply!.
-
- 12. “systeminfo” – Get Information About Your PC
-
- 13. “ipconfig” – Fix Internet Problems
-
- 14. 22. “CTRL + C” – Abort a Command
-
- 15. npm *ng *npx install abcd to install any library
-
- 16. to create any file using Commandline file name file.txt
-
- echo.>file.txt //in Windows
- touch file.txt // in Shell
-
-17. The general form of the command is cp source destination, for example:
-
-   cp myfile.txt myfilecopy.txt
-
-18 to delete file using cmd
-    del filename
-
-
-

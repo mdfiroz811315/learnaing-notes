@@ -1,0 +1,399 @@
+
+
+///////////////////////////////////////////////////////////
+
+Example 1: Variable ‘a’ is declared globally. So, the scope of the variable ‘a’ is global,
+ and it can be accessible everywhere in the program. The output shown is in the console.
+
+
+    var a = 10
+        function f(){
+            console.log(a)
+        }
+    f();
+    console.log(a);
+
+Output: 
+
+10
+10
+Example 2: The variable ‘a’ is declared inside the function. If the user tries to access it outside the function, it will display the error. Users can declare the 2 variables with the same name using the var keyword. Also, the user can reassign the value into the var variable. The output shown in the console.
+
+
+    function f() {
+ 
+        // It can be accessible any
+        // where within this function
+        var a = 10;
+        console.log(a)
+    }
+    f();
+ 
+    // A cannot be accessible
+    // outside of function
+    console.log(a);
+
+Output:
+
+10
+ReferenceError: a is not defined
+Example 3: User can re-declare variable using var and user can update var variable. The output is shown in the console.
+
+ 
+    var a = 10
+   
+    // User can re-declare
+    // variable using var
+    var a = 8
+ 
+    // User can update var variable
+    a = 7
+
+Output:
+
+7
+Example 4: If users use the var variable before the declaration, it initializes with the undefined value. The output is shown in the console.
+
+
+    console.log(a); // undefined
+    var a = 10;
+
+Output:
+
+undefined
+let keyword in JavaScript: The let keyword is an improved version of the var keyword. 
+
+Scope: block scoped: The scope of a let variable is only block scoped. It can’t be accessible outside the particular block ({block}). Let’s see the below example.
+
+Example 1: The output is shown in the console.
+
+
+    let a = 10;
+    function f() {
+        let b = 9
+        console.log(b);
+        console.log(a);
+    }
+    f();
+
+Output:
+
+9
+10
+Example 2: The code returns an error because we are accessing the let variable outside the function block. The output is shown in the console.
+
+
+    let a = 10;
+    function f() {
+        if (true) {
+            let b = 9
+ 
+            // It prints 9
+            console.log(b);
+        }
+ 
+        // It gives error as it
+        // defined in if block
+        console.log(b);
+    }
+    f()
+ 
+    // It prints 10
+    console.log(a)
+
+Output:
+
+9
+ReferenceError: b is not defined
+Example 3: Users cannot re-declare the variable defined with the let keyword but can update it.
+
+
+ 
+    let a = 10
+ 
+    // It is not allowed
+    let a = 10
+ 
+    // It is allowed
+    a = 10
+
+Output:
+
+Uncaught SyntaxError: Identifier 'a' has already been declared
+Example 4: Users can declare the variable with the same name in different blocks using the let keyword.
+
+
+  let a = 10
+  if (true) {
+    let a=9
+    console.log(a) // It prints 9
+  }
+  console.log(a) // It prints 10
+
+Output:
+
+9 
+10
+Example 5: If users use the let variable before the declaration, it does not initialize with undefined just like a var variable and return an error.
+
+
+    console.log(a);
+    let a = 10;
+
+Output:
+
+Uncaught ReferenceError: Cannot access 'a' before initialization
+const keyword in JavaScript: The const keyword has all the properties that are the same as the let keyword,
+ except the user cannot update it.
+
+Scope: block scoped: When users declare a const variable, they need to initialize it, otherwise, it returns an error. The user cannot update the const variable once it is declared. 
+
+Example 1: We are changing the value of the const variable so that it returns an error. The output is shown in the console.
+
+
+    const a = 10;
+    function f() {
+        a = 9
+        console.log(a)
+    }
+    f();
+
+Output:
+
+a=9
+TypeError:Assignment to constant variable.
+Example 2: Users cannot change the properties of the const object, but they can change the value of properties of the const object.
+
+
+    const a = {
+        prop1: 10,
+        prop2: 9
+    }
+     
+    // It is allowed
+    a.prop1 = 3
+ 
+    // It is not allowed
+    a = {
+        b: 10,
+        prop2: 9
+    }
+
+Output:
+
+Uncaught SyntaxError:Unexpected identifier
+
+//////////////////////////////////////////////////////////
+
+foo(); // 'FOOOOO'
+function foo() {
+  console.log('FOOOOO');
+}
+
+foo(); // Uncaught TypeError: foo is not a function
+var foo = function() {
+  console.log('FOOOOO');
+};
+
+What is IIFEs (Immediately Invoked Function Expressions)?
+Mid 
+Top 179 JavaScript Interview Questions  JavaScript  179  
+Answer
+It’s an Immediately-Invoked Function Expression, or IIFE for short. It executes immediately after it’s created:
+
+(function IIFE(){
+	console.log( "Hello!" );
+})();
+// "Hello!"
+
+/////////////////////////////////////////////////////
+setTimeout(function() {
+  console.log('Hello world!');
+}, 1000);
+
+
+for(i=0;i<10;i++){
+        setTimeout(function() {
+    console.log('Hello world!'+i);
+    }, 0);
+}
+for(let i=0;i<10;i++){
+        setTimeout(function() {
+    console.log('Hello world!'+i);
+    }, 0);
+}
+
+ function printWithDelay(value) {
+        setTimeout(() => console.log(value), 0);
+    }
+
+for (var i = 0; i < 10; i++) {
+  printWithDelay(i);
+}
+
+////////////////////////////////////////////////
+
+   let i;
+for (i = 0; i < 3; i++) {
+  const log = () => {
+    console.log(i);
+  }
+  setTimeout(log, 100);
+}
+Answer
+If you haven't heard about this tricky question before, most likely your answer is 0, 1 and 2: which is incorrect.
+ When I first tried to solve it, this was my answer too!
+
+There are 2 phases behind executing this snippet.
+
+Phase 1
+
+for() iterating 3 times. During each iteration a new function log() is created, which captures the variable i. Then setTimout() schedules an execution of log().
+When for() cycle completes, i variable has value 3.
+log() is a closure that captures the variable i, which is defined in the outside scope of for() cycle. 
+It's important to understand that the closure captures i variable lexically.
+
+Phase 2
+
+The second phase happens after 100ms:
+
+The 3 scheduled log() callbacks are called by setTimeout(). log() reads the current value of variable i, which is 3,
+ and logs to console 3.
+That's why the output to the console is 3, 3 and 3.
+
+////////////////////////////////////////////////////////////////////////////////
+What's the result of the equality check?
+
+0.1 + 0.2 === 0.3 // => ???
+Answer
+First, let's look at the value of 0.1 + 0.2:
+
+0.1 + 0.2; // => 0.30000000000000004
+The sum of 0.1 and 0.2 numbers is not exactly 0.3, but slightly above 0.3.
+
+Due to how floating point numbers are encoded in binary, 
+operations like addition of floating point numbers are subject to rounding errors.
+
+Simply put, comparing floats directly is not precise.
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+const length = 4;
+const numbers = [];
+for (var i = 0; i < length; i++);{
+  numbers.push(i + 1);
+}
+console.log(numbers);
+
+const length1 = 4;
+const numbers1 = [];
+for (let i = 0; i < length1; i++);{
+  numbers1.push(i + 1);
+}
+console.log(numbers1);
+
+const length = 4;
+const numbers = [];
+var i;
+for (i = 0; i < length; i++) {
+  // does nothing
+}
+{ 
+  // a simple block
+  numbers.push(i + 1);
+}
+numbers; // => [5]
+for() increments i variable until 4. Then JavaScript enters one time the block { numbers.push(i + 1); }, pushing 4 + 1 to numbers array.
+
+Thus numbers is [5].
+
+
+const length2 = 4;
+const numbers2 = [];
+for (var i = 0; i < length1; i++){
+  numbers2.push(i + 1);
+}
+console.log(numbers2);
+
+////////////////////////////////////////////////////////////////////////////////////
+
+
+ var va = 10;
+ (()=>{
+    va3 = 35;
+    console.log(va3,"va3");
+    var va3 = 45;
+    va2 = 15
+    console.log(va,"va");
+
+ })();
+ console.log(va2,"va2");
+ console.log(va3,"va3");
+ var va = 30;
+
+Use var, it reduces the scope of the variable otherwise the variable looks up to the nearest closure searching for a var statement. If it cannot find a var then it is global (if you are in a strict mode, using strict, global variables throw an error). This can lead to problems like the following.
+
+function f (){
+    for (i=0; i<5; i++);
+}
+var i = 2;
+f ();
+alert (i); //i == 5. i should be 2
+If you write var i in the for loop the alert shows 2.
+ ///////////////////////////////////////////////////////
+
+console.log(0.1 + 0.2);
+console.log(0.1 + 0.2 == 0.3);
+
+
+///////////////////////////////////////
+
+console.log(1 +  "2" + "2");
+console.log(1 +  +"2" + "2");
+console.log(1 +  -"1" + "2");
+console.log(+"1" +  "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+console.log(false == '0')
+console.log(false === '0')
+
+///////////////////////////////////////
+
+var x = 21;
+var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();
+Hide answer
+Neither 21, nor 20, the result is undefined
+
+It’s because JavaScript initialization is not hoisted.
+
+(Why doesn’t it show the global value of 21? The reason is that when the function is executed, it checks that there’s a local x variable present but doesn’t yet declare it, so it won’t look for global one.)
+
+
+///////////////////////////////////////////////////
+
+console.log(1 < 2 < 3);
+console.log(3 > 2 > 1);
+Hide answer
+The first statement returns true which is as expected.
+
+The second returns false because of how the engine works regarding operator associativity for < and >. It compares left to right, so 3 > 2 > 1 JavaScript translates to true > 1. true has value 1, so it then compares 1 > 1, which is false.
+
+////////////////////////////////////////////////////
+
+console.log(typeof typeof 1);
+Hide answer
+string
+
+typeof 1 will return "number" and typeof "number" will return string.
+
+
